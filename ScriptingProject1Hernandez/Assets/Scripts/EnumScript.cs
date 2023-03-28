@@ -11,6 +11,10 @@ public class EnumScript : MonoBehaviour
         Direction myDirection;
 
         myDirection = Direction.North;
+
+        Debug.Log("My direction is South");
+
+        Debug.Log("My oppisite direction is North");
     }
 
     Direction ReverseDirection (Direction dir)
