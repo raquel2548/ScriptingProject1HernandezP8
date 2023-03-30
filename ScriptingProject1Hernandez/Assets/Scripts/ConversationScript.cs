@@ -4,15 +4,35 @@ using UnityEngine;
 
 public class ConversationScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int intelligence = 5;
+
     void Start()
     {
-        
+        Greet();  
     }
 
-    // Update is called once per frame
-    void Update()
+    void Greet()
     {
-        
+        switch (intelligence)
+        {
+            case 5:
+                print("HEllO!!!");
+                break;
+            case 4:
+                print("HOPE");
+                break;
+            case 3:
+                print("YOU");
+                break;
+            case 2:
+                print("HAVE");
+                break;
+            case 1:
+                print("A");
+                break;
+            default:
+                print("GREAT DAY!!");
+                break;
+        }
     }
 }
