@@ -6,9 +6,12 @@ public class ConversationScript : MonoBehaviour
 {
     public int intelligence = 5;
 
-    void Start()
+    void Update()
     {
-        Greet();  
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Greet();
+        }
     }
 
     void Greet()
@@ -16,7 +19,7 @@ public class ConversationScript : MonoBehaviour
         switch (intelligence)
         {
             case 5:
-                print("HEllO!!!");
+                print("Hello!!!");
                 break;
             case 4:
                 print("HOPE");
