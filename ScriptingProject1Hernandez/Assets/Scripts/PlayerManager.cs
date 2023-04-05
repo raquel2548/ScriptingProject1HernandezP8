@@ -8,6 +8,6 @@ public class PlayerManager : MonoBehaviour
     void Start()
     {
       
-        int x = Player.playerCount;
+       // int x = Player.playerCount;
     }
 }
