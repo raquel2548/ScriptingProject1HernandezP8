@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SomeClass
+public class SomeClass : MonoBehaviour
 {
     //The first Add method has a signature of
     //"Add(int, int)". This signature mmust be unique.
@@ -17,6 +17,6 @@ public class SomeClass
     
     public string Add(string str1, string str2)
     {
-        return str1 + str2;
+        return str1 + " " +  str2;
     }
 }
